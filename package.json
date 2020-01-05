@@ -1,0 +1,18 @@
+{
+  "name": "arabale_lambda_layer",
+  "version": "1.0.0",
+  "description": "Holds the common packages across all lambdas",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install && if not exist nodejs mkdir nodejs && xcopy node_modules nodejs\\node_modules /s /j",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arabale",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "mysql": "^2.17.1",
+    "shortid": "^2.2.15",
+    "uuid": "^3.3.3"
+  }
+}
